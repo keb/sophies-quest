@@ -60,6 +60,7 @@ class PlayState extends FlxState
 				if (pooProgress - 1 <= 0) pooProgress = 0;
 				else pooProgress -= 1;
 
+				pooProgress = fixedFloat(pooProgress, 1);
 				pooText.text = "poo progress: " + pooProgress + "%";
 			}
 		}, 0);
